@@ -1,0 +1,17 @@
+{
+  "name": "commerce_api_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Damien LEPRETRE",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jest": "^21.2.1",
+    "pg": "^7.4.0",
+    "pgtest": "^0.2.2"
+  }
+}
