@@ -10,8 +10,19 @@
 //
 // WARNING: You're not allowed to use `Array.map`!
 
-// Your code here...
+function double(number){
+  return number*2;
+}
 
+function map(array, fn){
+  let result = [];
+  for (let i = 0; i < array.length; i++) {
+    result.push(fn(array[i]));
+  }
+  return result;
+}
+
+console.log(map([1,2,3], double));
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = { double: double, map: map };

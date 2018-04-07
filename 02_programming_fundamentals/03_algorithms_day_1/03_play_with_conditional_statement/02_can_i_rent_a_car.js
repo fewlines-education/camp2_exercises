@@ -17,3 +17,4 @@ const bonus = driverData.bonus;
 let canRentACar;
 
 // Your code here:
+canRentACar = ((driverLicense <= "B" ) && (licenseIssued <= 2016) && (numberOfAccident === 0 || bonus === 0.7));
