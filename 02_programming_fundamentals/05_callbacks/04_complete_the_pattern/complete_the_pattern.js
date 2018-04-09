@@ -34,9 +34,39 @@
 // ```
 
 function pattern(size) {
-  // Your code here
+  let endResult = "";
+  if(size < 1){return endResult;}
+  for (let i = 1; i <= size; i++) {
+    if(i === size){endResult = endResult + lastLine(i);}
+    else {endResult = endResult + addLine(i);}
+  }
+  console.log(endResult);
+  return endResult;
 }
+
+function addLine(number){
+  let result = "";
+  for (let i = 0; i < number; i++) {
+    result = result + number.toString();
+  }
+  result = result + "\n";
+  return result;
+}
+function lastLine(number){
+  let result = "";
+  for (let i = 0; i < number; i++) {
+    result = result + number.toString();
+  }
+  return result;
+}
+
+pattern(3);
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = pattern;
+
+/* Pseudo Code
+creer une fonction qui ajoute une line a un string
+faire une boucle for dans la fonction pattern qui call le addLine a chaque boucle
+*/

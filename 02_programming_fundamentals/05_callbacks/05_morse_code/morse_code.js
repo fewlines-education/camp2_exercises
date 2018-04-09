@@ -45,9 +45,39 @@ const MORSE_CODE = {
 };
 
 function decodeMorse(morse) {
-  // Your code here
+  let morseArray = split(morse);
+  return arrayMatch(morseArray, MORSE_CODE);
 }
 
+function split(morseString){
+  console.log("this is morseString : " + morseString.split(" "));
+  if(morseString.includes("   ")){
+    let index = morseString.indexOf("   ");
+
+  }
+  return morseString.split(" ");
+}
+
+function arrayMatch(array, array2){
+  let result = "";
+  for (let i = 0; i < array.length; i++){
+    console.log(array2[array[i]]);
+    if(array2[array[i]] === undefined){
+      result = result + " ";
+      i = i + 2;
+    }
+    result = result + array2[array[i]];
+  }
+  console.log("this is result :" + result);
+  return result;
+}
+
+decodeMorse(".... . -.--   .--- ..- -.. .");
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
 module.exports = decodeMorse;
+
+/*Pseudo Code
+split(" ") pour separer le 'morse'
+utiliser map pour creer un nouveau tableau ou tout match est remplacé
+*/
