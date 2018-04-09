@@ -8,5 +8,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
   }
 }

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39b97bbc-e488-4647-b8b7-d74b9b3d2112" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/01_play_with_variables/01_index.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/01_play_with_variables/01_index.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/02_play_with_arrays/01_arrays.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/02_play_with_arrays/01_arrays.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/02_play_with_arrays/02_arrays_methods.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/02_play_with_arrays/02_arrays_methods.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/03_play_with_conditional_statement/01_can_i_drink_alcohol.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/03_play_with_conditional_statement/01_can_i_drink_alcohol.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/03_play_with_conditional_statement/02_can_i_rent_a_car.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/03_play_with_conditional_statement/02_can_i_rent_a_car.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/01_print_numbers.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/01_print_numbers.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/02_digits_again.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/02_digits_again.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/03_iteration.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/03_iteration.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/04_filtering.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/04_filtering.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/05_descending.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/05_descending.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/06_print_numbers_with_while.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/06_print_numbers_with_while.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/07_digits_again_with_while.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/07_digits_again_with_while.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/08_iteration_with_while.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/08_iteration_with_while.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/09_filtering_with_while.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/09_filtering_with_while.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/10_descending_with_while.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/10_descending_with_while.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/01_range.js" afterPath="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/01_range.js" />
+      <change beforePath="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/package.json" afterPath="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/package.json" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="01_range.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/01_range.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="1" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/01_range.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="720" />
+    <option name="height" value="837" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="02_programming_fundamentals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="02_programming_fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorithms_day_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="02_programming_fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorithms_day_2" type="462c0819:PsiDirectoryNode" />
+              <item name="01_range_function" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="02_programming_fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorithms_day_2" type="462c0819:PsiDirectoryNode" />
+              <item name="01_range_function" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camp2_exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camp2_exercises" type="462c0819:PsiDirectoryNode" />
+              <item name="02_programming_fundamentals" type="462c0819:PsiDirectoryNode" />
+              <item name="04_algorithms_day_2" type="462c0819:PsiDirectoryNode" />
+              <item name="02_car_rental" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39b97bbc-e488-4647-b8b7-d74b9b3d2112" name="Default" comment="" />
+      <created>1523240062795</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523240062795</updated>
+      <workItem from="1523240064104" duration="188000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="188000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="837" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21564482" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292011" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292011" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/02_programming_fundamentals/03_algorithms_day_1/04_play_with_for_loop/01_print_numbers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_programming_fundamentals/04_algorithms_day_2/01_range_function/01_range.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
