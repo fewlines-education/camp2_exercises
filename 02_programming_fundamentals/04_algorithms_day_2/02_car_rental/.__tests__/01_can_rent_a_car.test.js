@@ -53,5 +53,5 @@ test("Returns true when driver has C License for 5 year, without accidents and b
     bonus: 0.9,
   };
 
-  expect(canRentACar(driver)).toBe(false);
+  expect(canRentACar(driver)).toBe(true);
 });
