@@ -10,13 +10,13 @@ const driver = {
 // * Output: a boolean if the driver can rent a car
 
 function canRentACar(driver) {
-	let canRent;
-	if ((driver.bonus > 0.7 || driver.numberOfAccident === 0)&& driver.driverLicense >= "B" && driver.licenseIssued < (new Date()).getFullYear()-2){
-		canRent = true;
-	}else {
-		canRent = false;
-	}
-	return canRent;
+  let canRent;
+  if ((driver.bonus > 0.7 || driver.numberOfAccident === 0)&& driver.driverLicense >= "B" && driver.licenseIssued <= new Date().getFullYear() - 2){
+    canRent = true;
+  }else {
+    canRent = false;
+  }
+  return canRent;
 }
 
 

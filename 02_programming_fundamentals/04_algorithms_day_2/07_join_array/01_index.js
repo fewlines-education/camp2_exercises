@@ -4,6 +4,12 @@
 //
 // eg: join(["zero", "one", "two"], "-") => "zero - one - two"
 
+function joinArray(jArray, str){
+  return jArray.reduce(function(arrayValue, str){
+    return arrayValue.concat(str);
+  }, []);
+}
+
 
 // ⚠ Do not remove me ! It's for tests
 // eslint-disable-next-line
