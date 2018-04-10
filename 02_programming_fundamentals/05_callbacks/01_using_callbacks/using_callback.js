@@ -4,5 +4,5 @@ const thisIsThePlayer = (callback) => {
 };
 
 // Write a function sayHello that greets: "Hello, Spartacus". (Where "Spartacus" is the player name)
-thisIsThePlayer((player) => {console.log("Hello, " + player.name);});
+thisIsThePlayer((player) => {console.log(`Hello, ${player.name}`);
 //thisIsThePlayer((player) => {console.log("Hello again, " + player.name);});

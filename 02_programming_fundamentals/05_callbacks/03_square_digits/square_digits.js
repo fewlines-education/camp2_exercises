@@ -20,13 +20,9 @@ function stringConvertion(nb){
   return stringArray;
 }
 
-function squareArray(array){
-  return array.map(squareNumber);
-}
+let squareArray = (array) => array.map(squareNumber);
 
-function squareNumber(number){
-  return number * number;
-}
+let squareNumber = (number) => number * number;
 
 function arrayToString(array){
   let result = "";

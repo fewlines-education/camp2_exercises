@@ -80,4 +80,7 @@ module.exports = decodeMorse;
 /*Pseudo Code
 split(" ") pour separer le 'morse'
 utiliser map pour creer un nouveau tableau ou tout match est remplacé
+
+possibilite d'avoir fait un split depuis le string avec comme
+parametre tout les elements de MORSE_CODE, ca aurait permis de garder les esapces !
 */
