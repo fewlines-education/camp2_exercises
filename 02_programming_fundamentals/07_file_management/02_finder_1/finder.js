@@ -19,10 +19,3 @@ If you select a file:
 
     Navigating through our files has never been so enjoyable!
 */
-
-
-function finder() {
-  // Your code here
-}
-
-module.exports = finder;
