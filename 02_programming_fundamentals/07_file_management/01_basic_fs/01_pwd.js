@@ -17,7 +17,7 @@ const rl = readline.createInterface({
 function pwd() {
   console.log(`Your current path is ${__dirname}\n`);
   rl.question("which file do you want to get the path?\n", (file) => {
-    console.log(path.resolve(file));
+    console.log(path.resolve());
     rl.close();
   });
 }

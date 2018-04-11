@@ -4,7 +4,7 @@
 // The function returns a boolean indicating if it successfully removed the file.
 
 const path = require("path");
-const fs = require('fs');
+const fs = require("fs");
 const readline = require("readline");
 
 const rl = readline.createInterface({
@@ -29,4 +29,4 @@ function deleteFile(){
 
 deleteFile();
 
-module.exports = deleteFile
+module.exports = deleteFile;

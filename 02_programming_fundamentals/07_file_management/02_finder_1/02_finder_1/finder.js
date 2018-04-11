@@ -24,21 +24,24 @@ function finderRec(file) {
 function showAllSubfiles(directory){
   let i = 0;
   let files = [];
-  fs.readdirSync(directory).forEach(file => {
-    console.log(`${i}. ${file}`);
-    files.push(file);
-    i++;
-  });
-  console.log("alive");
+  if(fs.readdirSync(directory).length === 0){return "This repisotory is empty";}
+  else{
+    fs.readdirSync(directory).forEach(file => {
+      console.log(`${i}. ${file}`);
+      files.push(file);
+      i++;
+    });
+  }
   console.log("\n");
   return files;
 }
 
 
 function openFile(file){
-  fs.readFile(file, (err, data) => {
+  fs.readFile(file, "utf8", (err, data) => {
     if(err){console.warn(err);}
     else{
+      console.log("\nThe data in this file is : \n \n");
       console.log(data);
     }
   });
@@ -46,18 +49,13 @@ function openFile(file){
 }
 
 function askQuestion(file , list){
-  rl.question("Choose a number to navigate : \n", (number) => {
+  rl.question("Choose a number to navigate >  ", (number) => {
+
     if(Number.isInteger(number)){
       console.warn("Value entered is not a number");
       askQuestion(file, list);
     }
 
-    console.log("file :" + file);
-    console.log("list :" + list);
-    console.log(number);
-    console.log(file[number]);
-    console.log(path.dirname(file[number]));
-    console.log(fs.lstatSync(file[number]).isDirectory());
     if(fs.lstatSync(file[number]).isDirectory()){
       console.log(`resultat de la fonction showAll : ${showAllSubfiles(file[number])}`);
       finderRec(path.resolve(file[number]));
