@@ -15,4 +15,5 @@ const person = {
   }
 };
 
+person.age;
 module.exports = person;

@@ -8,6 +8,9 @@ const orangeTree = {
 
   //Method
   pickAnOrange: function(){
+    if(!this.alive){
+      console.log(`This tree is dead at age ${this.age}, plant a new one !`);
+      return; }
     if(this.oranges>0){
       this.oranges = this.oranges - 1;
       return true;
@@ -19,14 +22,20 @@ const orangeTree = {
   },
 
   ageOneYear: function(){
+    if(!this.alive){
+      console.log(`This tree is dead at age ${this.age}, plant a new one !`);
+      return; }
     if(this.age>0 && this.age>= 50 && this.age<100){
-      if(this.age/1000 > Math.random()){
+      if(this.age/100 > Math.random()){
         this.alive=false;
       }
     }
 
     this.oranges = 0;
-    if(this.age > 100){this.alive = false;}
+    if(this.age > 100){
+      console.log(`This tree is dead at age ${this.age}, plant a new one !"`);
+      this.alive = false;
+    }
 
     if(this.alive){
       this.age = this.age + 1;
@@ -53,10 +62,29 @@ const orangeTree = {
   }
 };
 
-orangeTree.seed();
-orangeTree.age = 25;
-orangeTree.ageOneYear();
-console.log(orangeTree.age);
-console.log(orangeTree.oranges);
-
 module.exports = orangeTree;
+//
+//
+// const car = {
+//   //State
+//   minutes: 35,
+//   distance: 200,
+//   vitesse: 100,
+//
+//   //Fonction
+//   start: function() {
+//
+//   },
+//
+//   changeSpeed: function(vitesse){
+//
+//   },
+//
+//   drive: function(minutes){
+//
+//   },
+//
+//   showDistance: function(){
+//
+//   },
+// };
