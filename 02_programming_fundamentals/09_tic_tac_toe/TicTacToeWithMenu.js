@@ -8,11 +8,11 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-let options = [ 'A1' , 'A2' , 'A3' , 'B1' , 'B2' , 'B3' , 'C1', 'C2', 'C3' ];
+let options = [ 'A1' , 'A2' , 'A3' , 'B1' , 'B2' , 'B3' , 'C1', 'C2', 'C3', 'end' ];
 let optionsObject = {
 	y: 1 ,	// the menu will be on the top of the terminal
-	style: term.inverse ,
-	selectedStyle: term.dim.blue.bgGreen
+	style: term.inverse,
+	selectedStyle: term.black(),
 };
 
 const morpion = {
@@ -69,13 +69,15 @@ function changePlayer(){
 function askMove(){
   if(morpion.flag){
     changePlayer();
-    console.log("\x1b[5m",`End of the game\n Player${morpion.playerTurn+1} wins`);
+    console.log("\x1b[5m",`\nEnd of the game\n Player${morpion.playerTurn+1} wins`);
+    console.log("\x1b[0m");
     rl.close();
   }
   else{
-    rl.question(`It's your turn player ${morpion.playerTurn+1} ${morpion["pawn"+morpion.playerTurn]}, choose a cell to play > `, (cellPosition) => {
+    console.log(`It's your turn player ${morpion.playerTurn+1} ${morpion["pawn"+morpion.playerTurn]}`);
+    term.singleLineMenu( options , optionsObject , function( error , response ) {
       clear();
-
+      let cellPosition = response.selectedText;
       morpion.wrongValue = true;
       for (let i = 1; i <= 3; i++) {
         if (`A${i}` === cellPosition){
@@ -90,17 +92,18 @@ function askMove(){
         // console.log(morpion.wrongValue);
       }
       if(cellPosition === "end" || cellPosition === "End"){
-        console.log("\x1b[5m", "You choosed to rage quit\nHere's where you left the game :\n");
+        console.log("\x1b[5m", "\nYou choosed to rage quit\nHere's where you left the game :\n");
         console.log("\x1b[0m");
         rl.close();
       }
       else if(morpion.wrongValue){
-        console.log("Wrong Value !\nValue entered must be a position of type : A1\n");
+        console.log("\nWrong Value !\nValue entered must be a position of type : A1\n");
         askMove();
       }
       else if((morpion[cellPosition] === morpion.pawn0 || morpion[cellPosition] === morpion.pawn1)){
         console.log("\x1b[31m",`\nThe cell ${cellPosition} has already been chosen ! \nTry again!`);
-        console.log("\x1b[0m");
+        term.black();
+        // console.log("\x1b[0m");
       }
       else {
         if(morpion.playerTurn === 0){
@@ -130,14 +133,19 @@ function checkVictoryOrEgality(){
   for (let i = 1; i <= 3; i++) {
     morpion.equality = true;
     if (!(morpion["A"+i] === morpion.pawn0 || morpion["A"+i] === morpion.pawn1)){
+      console.log("1 : "+ i + " " + !(morpion["A"+i] === morpion.pawn0 || morpion["A"+i] === morpion.pawn1));
       morpion.equality = false;
     }
-    if (!(morpion["B"+i] === morpion.pawn0 || morpion["B"+i] === morpion.pawn1)){
+    else if (!(morpion["B"+i] === morpion.pawn0 || morpion["B"+i] === morpion.pawn1)){
+      console.log("2 : " + i + " " + !(morpion["B"+i] === morpion.pawn0 || morpion["B"+i] === morpion.pawn1));
       morpion.equality = false;
     }
-    if (!(morpion["C"+i] === morpion.pawn0 || morpion["C"+i] === morpion.pawn1)){
+    else if (!(morpion["C"+i] === morpion.pawn0 || morpion["C"+i] === morpion.pawn1)){
+      console.log("3 : " + i + " "+ !(morpion["C"+i] === morpion.pawn0 || morpion["C"+i] === morpion.pawn1));
       morpion.equality = false;
     }
+    if(morpion.equality){return;};
+    console.log(morpion.equality);
   }
 
   if(((morpion.A1 === morpion.A2) && (morpion.A2 === morpion.A3)) || ((morpion.B1 === morpion.B2) && (morpion.B2 === morpion.B3)) || ((morpion.C1 === morpion.C2) && (morpion.A2 === morpion.C3))){

@@ -44,9 +44,9 @@ const morpion = {
 
     console.log("\n         1    2     3 \n");
     console.log(`A      ${this.convertToUnderscore(this.A1)} |${this.convertToUnderscore(this.A2)} |${this.convertToUnderscore(this.A3)} `);
-    console.log(`      -----+-----+-----`);
+    console.log(`      -----+----+-----`);
     console.log(`B      ${this.convertToUnderscore(this.B1)} |${this.convertToUnderscore(this.B2)} |${this.convertToUnderscore(this.B3)} `);
-    console.log(`      -----+-----+-----`);
+    console.log(`      -----+----+-----`);
     console.log(`C      ${this.convertToUnderscore(this.C1)} |${this.convertToUnderscore(this.C2)} |${this.convertToUnderscore(this.C3)} `);
     console.log("\n");
   },
