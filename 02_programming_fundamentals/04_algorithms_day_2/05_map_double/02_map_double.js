@@ -10,7 +10,19 @@
 //
 // WARNING: You're not allowed to use `Array.map`!
 
-// Your code here...
+// Your code here
+function double(n){
+  return n*2;
+}
+
+
+function map(mArray, mFunction){
+  let newArray = [];
+  for (let i in mArray) {
+    newArray.push(mFunction(mArray[i]));
+  }
+  return newArray;
+}
 
 // Do not remove last lines, it is for tests
 // eslint-disable-next-line
