@@ -154,7 +154,7 @@ test("updatePostTitle", done => {
   updatePostTitle(2, "title", result => {
     requestPromise({
       url: "http://jsonplaceholder.typicode.com/posts/2",
-      method: "PUT",
+      method: "PATCH",
       form: {
         title: "title"
       }
@@ -170,7 +170,7 @@ test("updatePostBody", done => {
   updatePostBody(2, "body", result => {
     requestPromise({
       url: "http://jsonplaceholder.typicode.com/posts/2",
-      method: "PUT",
+      method: "PATCH",
       form: {
         body: "body"
       }
@@ -186,7 +186,7 @@ test("updatePost", done => {
   updatePost(2, "title", "body", result => {
     requestPromise({
       url: "http://jsonplaceholder.typicode.com/posts/2",
-      method: "PUT",
+      method: "PATCH",
       form: {
         title: "title",
         body: "body"
