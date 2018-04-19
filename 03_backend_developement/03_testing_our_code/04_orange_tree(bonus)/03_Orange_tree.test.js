@@ -34,7 +34,7 @@ describe("List of tests for picking oranges", () => {
 
   test("tree should be able to be picked after aging from 10 to 11", () => {
     orangeTree.age = 10;
-    orangeTree.ageOneYear();
+    orangeTree.agyeOneYear();
     const result = orangeTree.pickAnOrange();
     expect(result).toBe(true);
   });
