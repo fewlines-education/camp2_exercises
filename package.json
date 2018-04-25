@@ -18,6 +18,7 @@
     "clear": "^0.1.0",
     "express": "^4.16.3",
     "keypress": "^0.2.1",
+    "node-fetch": "^2.1.2",
     "pg": "^7.4.1",
     "pg-promise": "^8.4.0",
     "phoenix-channels": "^1.0.0",
