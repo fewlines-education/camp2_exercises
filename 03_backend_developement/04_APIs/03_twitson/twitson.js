@@ -1,5 +1,5 @@
 const request = require("request");
-const port = (process.env.PORT || 3000);
+// const port = (process.env.PORT || 3000);
 const OAuth = require("OAuth");
 
 const oauth = new OAuth.OAuth(
@@ -16,7 +16,7 @@ let twitterText = "";
 oauth.get(url + "elonmusk", process.env.TWITTER_ACCESS_TOKEN, process.env.TWITTER_ACCESS_SECRET,
   function (error, data) {
     if (error) {
-      console.log("ligne 18",error);
+      console.log("ligne 19",error);
     }
     else {
 
