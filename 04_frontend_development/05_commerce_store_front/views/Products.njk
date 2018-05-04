@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+  Products
+{% endblock %}
+
+{# {% block contentIntro %}
+    this is the board : {{board}}
+{% endblock %} #}
+
+{% block List %}
+  <div class="container">
+    <ul class="list-group">
+      <li class="list-group-item active font-weight-bold">CATEGORIES</li>
+        {% for element in board %}
+        <a class="list-group-item list-group-item-action">
+          <form action="http://localhost:3000/products/{{element}}">
+              <input type="submit" value="{{element}}" />
+          </form>
+        </a>
+          {# <a type="button" class="btn btn-info list-group-item list-group-item-action" value="Input Button" onclick=" relocate_home("{{element}}")">
+            {{element}}
+          </a> #}
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
