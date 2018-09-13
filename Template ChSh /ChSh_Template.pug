@@ -1,0 +1,102 @@
+h1 Title
+
+
+p Intro and definition
+
+
+:markdown-it(html=true)
+
+  ## Table of Contents
+  |||
+  | :-------------------- | -------------------: |
+  | Key Commands       |         [link](#KeyCmd) |
+  | Diagrams     |         [link](#Diag) |
+  | Examples        |         [link](#Ex) |
+  | Typical errors        |         [link](#TypErr) |
+  | Tips        |         [link](#Tips) |
+  | Links        |         [link](#Zelda) |
+
+
+div(style="page-break-before:always")
+
+<a name="KeyCmd"></a>
+h2 Key Commands
+
+:markdown-it(html=true)
+
+  * ### Lorem 
+
+
+div(style="page-break-before:always")
+  
+<a name="Diag"></a>
+h2 Diagrams
+
+:markdown-it(html=true)
+
+  
+
+div(style="page-break-before:always")
+  
+<a name="Ex"></a>
+h2 Examples
+
+:markdown-it(html=true)
+
+  
+
+div(style="page-break-before:always")
+
+<a name="TypErr"></a>
+h2 Typical Errors
+
+:markdown-it(html=true)
+
+  Lorem
+
+
+div(style="page-break-before:always")
+
+<a name="Tips"></a>
+h2 Tips
+
+:markdown-it(html=true)
+
+  
+  
+  
+div(style="page-break-before:always")
+
+<a name="Zelda"></a>
+h2 Links
+
+:markdown-it
+  *[HTML]: HyperText Markup Language
+  
+  Some text with [a link][1] and
+  another [link][2].
+
+  [1]: http://example.com/ "Title"
+  [2]: http://example.org/ "Title"
+
+
+template#page-footer
+  style(type='text/css').
+    .pdfheader {
+      font-size: 10px;
+      color: #aaa;
+      font-family: Monaco;
+      font-weight: bold;
+      width: 1000px;
+      border-top: 1px solid #aaa;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 1mm;
+      margin-bottom: -1mm;
+      text-align: center;
+    }
+
+  .pdfheader Page #[span.pageNumber] / #[span.totalPages]
+
+style
+  include:scss ../Template ChSh/ChSh_Template.scss
