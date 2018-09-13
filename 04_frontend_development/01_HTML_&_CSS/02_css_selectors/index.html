@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8" />
+    <title>Welcome Page</title>
+    <style>
+      .container{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 350px;
+        grid-gap: 5px;
+      }
+      .box:nth-child(even){
+        background-color: grey;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        align-self: end;
+      }
+      .box:nth-child(odd){
+        background-color: #600060;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+      }
+      .important{
+        font-weight: bold;
+      }
+      .emphasis{
+        font-style: italic;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Grid Tests</h1>
+
+    <div class="container">
+      <div class="box">first line</div>
+      <div class="box">second line</div>
+      <div class="box">third line</div>
+      <div class="box">fourth line</div>
+      <div class="box">fifth line</div>
+    </div>
+
+    <p>
+      <span class="important"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In massa enim, interdum in porttitor sed, cursus ac est. Vivamus lobortis ac odio quis auctor. In id sodales ipsum, quis fermentum lacus. Nullam dignissim nisi tellus, eu pulvinar sapien mollis eget. Sed non faucibus nibh. In aliquam consequat metus, in blandit lorem imperdiet nec. Phasellus vel dolor fermentum, bibendum mi eget, ultrices elit. Nunc nibh massa, lacinia id malesuada eu, sodales nec mi. Cras facilisis euismod ornare. Nam rutrum tincidunt arcu sed molestie. Aliquam odio sapien, placerat a volutpat non, maximus ac dolor. Pellentesque congue vestibulum magna in ultrices.
+      </span>
+      <br>
+      Phasellus egestas <span class="important emphasis">elementum</span> varius. Nam vulputate tellus ut massa auctor, non consectetur mauris euismod. Vestibulum vitae urna in risus hendrerit cursus. Etiam eget elit sit amet ligula dapibus placerat. Suspendisse sagittis semper convallis. Suspendisse consectetur tellus non metus laoreet euismod. Fusce suscipit arcu leo, ut sodales tortor egestas sit amet. Cras nunc ante, tempus sit amet gravida ac, suscipit nec odio. Curabitur nisl leo, semper eget magna vel, vestibulum volutpat metus.
+    </p>
+
+  </body>
+</html>
+
+<!--
+.odd{
+  background-color: grey;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.even{
+  color: #000;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}

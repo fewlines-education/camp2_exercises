@@ -14,7 +14,10 @@
 // even several times
 
 function fibo(n) {
-  // your code here
+  if(n<0){return null;}
+  else if(!Number.isInteger(n)){return null;}
+  else if(n === 0){return n;}
+  else {return n + fibo(n-1);}
 }
 
 // do not remove this line, it is for tests

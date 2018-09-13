@@ -11,5 +11,8 @@
   "devDependencies": {
     "jest": "^21.2.1",
     "wapiti": "^1.2.1"
+  },
+  "dependencies": {
+    "npm": "^6.0.0"
   }
 }

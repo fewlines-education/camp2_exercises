@@ -11,8 +11,9 @@ const person = {
     return `${this.firstname} ${this.lastname}`;
   },
   introduceMyself: function() {
-    // Your code here
+    return `Hello! I'm ${this.fullname()} and I'm ${this.age}`;
   }
 };
 
+person.age;
 module.exports = person;

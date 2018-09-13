@@ -9,9 +9,22 @@
    YOU MUST USE array.map
 */
 
-function fizzBuzz(list) {
-
+function translate(number){
+  if(number === 0){return 0;}
+  if(number%3 === 0 && number%5 === 0){
+    return "FizzBuzz";
+  }
+  else if(number%3 === 0){
+    return "Fizz";
+  }
+  else if(number%5 === 0){
+    return "Buzz";
+  }
+  else {return number;}
 }
 
-
+function fizzBuzz(list) {
+  const result = list.map(translate);
+  return result;
+}
 module.exports = fizzBuzz;

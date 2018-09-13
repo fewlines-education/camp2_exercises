@@ -1,0 +1,11 @@
+Error: Insert failed, duplicate id
+    at Function.insert (/app/node_modules/lodash-id/src/index.js:49:18)
+    at /app/node_modules/lodash/lodash.js:4379:28
+    at arrayReduce (/app/node_modules/lodash/lodash.js:704:21)
+    at baseWrapperValue (/app/node_modules/lodash/lodash.js:4378:14)
+    at LodashWrapper.wrapperValue (/app/node_modules/lodash/lodash.js:9067:14)
+    at create (/app/node_modules/json-server/lib/server/router/plural.js:223:50)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)

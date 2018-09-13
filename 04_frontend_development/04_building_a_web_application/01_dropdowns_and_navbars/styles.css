@@ -1,0 +1,18 @@
+h1 {
+  color: tomato;
+  border: 1px solid tomato;
+  font-size: 24px;
+  /* will be 24px */ }
+
+h2 {
+  color: lightblue; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+/*# sourceMappingURL=styles.css.map */
