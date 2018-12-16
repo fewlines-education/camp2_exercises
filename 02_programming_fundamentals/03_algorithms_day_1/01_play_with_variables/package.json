@@ -12,5 +12,8 @@
   },
   "jest": {
     "noStackTrace": true
-  }
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
 }

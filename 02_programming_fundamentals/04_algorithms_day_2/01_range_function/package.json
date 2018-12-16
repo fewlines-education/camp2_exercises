@@ -8,5 +8,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^23.6.0"
-  }
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
 }
