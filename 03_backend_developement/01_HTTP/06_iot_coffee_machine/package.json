@@ -1,0 +1,17 @@
+{
+  "name": "06_iot_coffee_machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "coffee_machine.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "noStackTrace": true
+  },
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
