@@ -26,7 +26,7 @@ test("Console.log prints out the text entered", () => {
       question: question,
       close: jest.fn()
     }));
-    // .toMatch()
+
     readline.createInterface = reader;
 
     const executedCode = eval(code);
@@ -55,7 +55,7 @@ test("The programs asks three distinct questions", () => {
       question: question,
       close: jest.fn()
     }));
-    // .toMatch()
+
     readline.createInterface = reader;
 
     const executedCode = eval(code);
@@ -82,7 +82,7 @@ test("Console.log testing", () => {
       question: question,
       close: jest.fn()
     }));
-    // .toMatch()
+
     readline.createInterface = reader;
 
     const executedCode = eval(code);
@@ -99,25 +99,19 @@ test("Stream has been closed", () => {
   return studentCode.then(code => {
     const question = jest
       .fn()
-      .mockImplementation((_text, callback) => callback("aze"));
-    // .mockImplementationOnce((_text, callback) => callback("Martin"))
-    // .mockImplementationOnce((_text, callback) => callback("Vielvoye"))
-    // .mockImplementationOnce((_text, callback) => callback("42"));
+      .mockImplementation((_text, callback) => callback("foo"));
+
     const readerClose = jest.fn();
     const reader = jest.fn(_object => ({
       question: question,
       close: readerClose
     }));
-    // reader.close = readerClose;
-    // reader.close = close;
-    // .toMatch()
+
     const readline = require("readline");
     readline.createInterface = reader;
 
     const executedCode = eval(code);
-    // console.log(reader.close);
-    // console.log(readerClose);
-    // console.log(reader().close);
+
     expect(readerClose).toHaveBeenCalled();
   });
 });
