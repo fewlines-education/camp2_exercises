@@ -6,6 +6,9 @@
   "scripts": {
     "test": "eslint . && jest"
   },
+  "eslintIgnore": [
+    "__tests__"
+  ],
   "author": "",
   "license": "ISC",
   "jest": {
