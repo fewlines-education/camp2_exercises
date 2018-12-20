@@ -8,7 +8,6 @@ const machine = {
   },
 
   expresso: function(){
-    this.lowCoffeeCheck();
 
     if(this.litersOfCoffee >= 0.08){
       this.litersOfCoffee -= 0.08;
@@ -18,7 +17,6 @@ const machine = {
   },
 
   longCoffee: function(){
-    this.lowCoffeeCheck();
 
     if(this.litersOfCoffee >= 0.15){
       this.litersOfCoffee -= 0.15;
