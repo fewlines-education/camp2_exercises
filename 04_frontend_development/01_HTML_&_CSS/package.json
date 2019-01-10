@@ -4,11 +4,8 @@
   "description": "",
   "main": "codeTesting.js",
   "scripts": {
-    "test": "eslint . && jest"
+    "test": "jest"
   },
-  "eslintIgnore": [
-    "__tests__"
-  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
