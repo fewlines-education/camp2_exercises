@@ -1,12 +1,15 @@
 {
-  "name": "gifIsLife",
+  "name": "app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "node-fetch": "^2.3.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.0.5",
+    "wapiti": "^3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
