@@ -28,10 +28,7 @@ it("the first printed list is in ascending order", () => {
   const listMock = shallow(<App/>);
   const stateList = listMock.state("listItem");
 
-  let beforeClick = [];
-  stateList.forEach(element => {
-    beforeClick.push(element.props.children)
-  })
+  const beforeClick = stateList.map(element => element.props.children);
 
   let arrayMock  = [0,1,2,3,4,5,6,7,8,9];
 
