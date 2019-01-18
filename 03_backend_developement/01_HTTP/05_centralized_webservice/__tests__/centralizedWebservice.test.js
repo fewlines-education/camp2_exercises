@@ -1,35 +1,19 @@
 const child_process = require("child_process");
 const fs = require("fs");
 const path = require("path");
-const readcode = require("../.test_utils/readcode");
-// const jest = require("jest")
-// const {userResume, stopCopyingMe} = require("../centralized_webservice.js");
 
 let studentCode;
-
-beforeAll(() => {
-  // Loads the student's code
-  studentCode = readcode(path.resolve(__dirname, "../centralized_webservice.js"));
-  return studentCode;
-
-});
 
 afterEach(() => {
   jest.resetModules();
 })
 
-//Divide the big test into a series of smaller test with the right description
-//Do the second part of the testing.
 describe("Tests series for the userResume() function", function() {
   test("Is Console.log called 10 times ?", (done) => {
     return studentCode.then( code => {
 
       const testDataUser = fs.readFileSync(path.resolve(__dirname, "fetch_users.result"), "utf8");
       const testDataPost = fs.readFileSync(path.resolve(__dirname, "fetch_posts.result"), "utf8");
-      // , (data) => {
-      //   console.log("data is : ", data);
-      //   testData = JSON.parse(data);
-      // });
 
       const consoleLog = jest.fn();
       console.log = consoleLog;
@@ -54,10 +38,7 @@ describe("Tests series for the userResume() function", function() {
 
       const {userResume} = require("../centralized_webservice.js");
 
-
       userResume();
-
-      // done();
     });
   });
 
@@ -66,10 +47,6 @@ describe("Tests series for the userResume() function", function() {
 
       const testDataUser = fs.readFileSync(path.resolve(__dirname, "fetch_users.result"), "utf8");
       const testDataPost = fs.readFileSync(path.resolve(__dirname, "fetch_posts.result"), "utf8");
-      // , (data) => {
-      //   console.log("data is : ", data);
-      //   testData = JSON.parse(data);
-      // });
 
       const consoleLog = jest.fn();
       console.log = consoleLog;
@@ -103,10 +80,7 @@ describe("Tests series for the userResume() function", function() {
 
       const {userResume} = require("../centralized_webservice.js");
 
-
       userResume();
-
-      // done();
     });
   });
 });
@@ -116,11 +90,6 @@ describe("Tests series for the stopCopyingMe() function", function() {
     return studentCode.then( code => {
 
       const testDataComments = fs.readFileSync(path.resolve(__dirname, "fetch_comments.result"), "utf8");
-      // const testDataPost = fs.readFileSync(path.resolve(__dirname, "fetch_posts.result"), "utf8");
-      // , (data) => {
-      //   console.log("data is : ", data);
-      //   testData = JSON.parse(data);
-      // });
 
       const consoleLog = jest.fn();
       console.log = consoleLog;
@@ -129,18 +98,12 @@ describe("Tests series for the stopCopyingMe() function", function() {
         jest.fn()
           .mockImplementation((path, callback) => callback(null));
 
-
       const fsreadFile =
         jest.fn()
           .mockImplementationOnce((file, char, callback) => {
             callback(null, testDataComments);
 
-            // expect(console.log).toHaveBeenCalledTimes(9);
-            // expect(mockExec).toHaveBeenCalledTimes(101);
             expect(child_process.exec).toHaveBeenCalledTimes(101);
-            // console.warn(child_process.exec.mock.calls);
-            // expect(child_process.exec.mock.calls[101][0]).toEqual(expect.stringMatching(/(sh .\/shell_functions\/publish_comment.sh)/g));
-            // expect(child_process.exec).toHaveBeenNthCalledWith(102,"sh ./shell_functions/publish_comment.sh 100 'Leanne Graham' foo 'neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel'");
 
             done();
           });
@@ -148,13 +111,9 @@ describe("Tests series for the stopCopyingMe() function", function() {
       child_process.exec = mockExec;
       fs.readFile = fsreadFile;
 
-
       const {stopCopyingMe} = require("../centralized_webservice.js");
 
-
       stopCopyingMe();
-
-      // done();
     });
   });
 
@@ -162,11 +121,6 @@ describe("Tests series for the stopCopyingMe() function", function() {
     return studentCode.then( code => {
 
       const testDataComments = fs.readFileSync(path.resolve(__dirname, "fetch_comments.result"), "utf8");
-      // const testDataPost = fs.readFileSync(path.resolve(__dirname, "fetch_posts.result"), "utf8");
-      // , (data) => {
-      //   console.log("data is : ", data);
-      //   testData = JSON.parse(data);
-      // });
 
       const consoleLog = jest.fn();
       console.log = consoleLog;
@@ -175,16 +129,12 @@ describe("Tests series for the stopCopyingMe() function", function() {
         jest.fn()
           .mockImplementation((path, callback) => callback(null));
 
-
       const fsreadFile =
         jest.fn()
           .mockImplementationOnce((file, char, callback) => {
             callback(null, testDataComments);
 
-
             expect(child_process.exec.mock.calls[0][0]).toEqual(expect.stringMatching(/(sh .\/shell_functions\/fetch_comments.sh)/g));
-
-            // expect(child_process.exec).toHaveBeenNthCalledWith(102,"sh ./shell_functions/publish_comment.sh 100 'Leanne Graham' foo 'neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel'");
 
             done();
           });
@@ -192,13 +142,9 @@ describe("Tests series for the stopCopyingMe() function", function() {
       child_process.exec = mockExec;
       fs.readFile = fsreadFile;
 
-
       const {stopCopyingMe} = require("../centralized_webservice.js");
 
-
       stopCopyingMe();
-
-      // done();
     });
   });
 
@@ -206,11 +152,6 @@ describe("Tests series for the stopCopyingMe() function", function() {
     return studentCode.then( code => {
 
       const testDataComments = fs.readFileSync(path.resolve(__dirname, "fetch_comments.result"), "utf8");
-      // const testDataPost = fs.readFileSync(path.resolve(__dirname, "fetch_posts.result"), "utf8");
-      // , (data) => {
-      //   console.log("data is : ", data);
-      //   testData = JSON.parse(data);
-      // });
 
       const consoleLog = jest.fn();
       console.log = consoleLog;
@@ -218,7 +159,6 @@ describe("Tests series for the stopCopyingMe() function", function() {
       const mockExec =
         jest.fn()
           .mockImplementation((path, callback) => callback(null));
-
 
       const fsreadFile =
         jest.fn()
@@ -228,7 +168,6 @@ describe("Tests series for the stopCopyingMe() function", function() {
             for(let i = 1; i<=100; i++){
               expect(child_process.exec.mock.calls[i][0]).toEqual(expect.stringMatching(/(sh .\/shell_functions\/publish_comment.sh)/g));
             }
-            // expect(child_process.exec).toHaveBeenNthCalledWith(102,"sh ./shell_functions/publish_comment.sh 100 'Leanne Graham' foo 'neque unde voluptatem iure\nodio excepturi ipsam ad id\nipsa sed expedita error quam\nvoluptatem tempora necessitatibus suscipit culpa veniam porro iste vel'");
 
             done();
           });
@@ -236,13 +175,9 @@ describe("Tests series for the stopCopyingMe() function", function() {
       child_process.exec = mockExec;
       fs.readFile = fsreadFile;
 
-
       const {stopCopyingMe} = require("../centralized_webservice.js");
 
-
       stopCopyingMe();
-
-      // done();
     });
   });
 
