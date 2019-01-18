@@ -8,90 +8,47 @@ const Wapiti = require("wapiti");
 
 Enzyme.configure({ adapter: new Adapter() })
 
-it('renders without crashing', () => {
+test('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('an input component is present', () => {
+test('an input component is present', () => {
   const searchMock = shallow(<App/>);
 
   expect(searchMock.find('input')).toBeDefined();
 })
 
-it("a button exists", () => {
+test("a button exists", () => {
   const searchMock = shallow(<App/>);
 
   expect(searchMock.find('button')).toBeDefined();
 })
 
-// it("no images are present as long as no search has been done", () => {
-//   const searchMock = shallow(<App/>);
-//
-//   expect(searchMock.find('App').render().find('img')).not.toBeDefined();
-// })
-test("no images are present as long as no search has been done", () => {
-  return Wapiti().goto("http://localhost:3000")
-      .capture(() => document.querySelector("form").textContent)
-      .run()
-      .then(result => {
-        console.log(result);
-        // expect(result).not.tobeDefined();
-      })
-})
+test("keyword filled in form gives the right gif's URL from GIPHY", async () => {
 
+  const searchedGif = await Wapiti().goto("http://localhost:3000")
+    .fillForm({"#gifSearcher": "lol"}, { waitForPageLoad: false })
+    .puppeteer(page => page.waitForSelector("img"))
+    // .
+    .capture(() => {
+      return document.querySelector("img").src
+    })
+    .run()
 
-// it("the first printed list is in ascending order", () => {
-//   const searchMock = shallow(<App/>);
-//   const stateList = searchMock.state("listItem");
-//
-//   let beforeClick = [];
-//   stateList.forEach(element => {
-//     beforeClick.push(element.props.children)
-//   })
-//
-//   let arrayMock  = [0,1,2,3,4,5,6,7,8,9];
-//
-//   expect(beforeClick).toMatchObject(arrayMock)
-// });
-//
-// it('List changes after clicking on the button', () => {
-//   const searchMock = shallow(<App/>);
-//   const stateList = searchMock.state("listItem");
-//
-//   let beforeClick = [];
-//   stateList.forEach(element => {
-//     beforeClick.push(element.props.children)
-//   })
-//
-//   searchMock.find('button').simulate('click');
-//
-//   let afterClick = [];
-//   stateList.forEach(element => {
-//     afterClick.push(element.props.children)
-//   })
-//
-//   expect(beforeClick).not.toMatchObject(afterClick)
-// })
-//
-// it('List is reversed after clicking on the button', () => {
-//   const searchMock = shallow(<App/>);
-//   const stateList = searchMock.state("listItem");
-//
-//   let beforeClick = [];
-//   stateList.forEach(element => {
-//     beforeClick.push(element.props.children)
-//   })
-//
-//   searchMock.find('button').simulate('click');
-//
-//   let afterClick = [];
-//   stateList.forEach(element => {
-//     afterClick.push(element.props.children)
-//   })
-//
-//   expect(beforeClick).toMatchObject(afterClick.reverse())
-// })
+  const awaitedGifUrl = await fetch(
+    `http://api.giphy.com/v1/gifs/search?q=lol&api_key=dTJ7Uasn35PekyE6Vk8lix4AZEFmSEw4&limit=1`,
+    {method: "GET"}
+  )
+    .then((response) => response.json())
+    .then((result) => {
+      return result.data[0].images.original.url;
+    })
+    .catch((error) => {
+      console.warn(error);
+    })
 
-// ;find()
+  expect(searchedGif).toBe(awaitedGifUrl)
+
+}, 10000);
