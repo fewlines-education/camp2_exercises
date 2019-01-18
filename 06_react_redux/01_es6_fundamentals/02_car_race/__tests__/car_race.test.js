@@ -1,5 +1,5 @@
 const {sportCar, electricCar, cityCar, sportMoto, scooter, Track, Locomotion, Car, Moto} = require("../codeTesting");
-const F1 = require("../codeTesting");
+const F1 = require("../car_race");
 
 afterEach(() => {
   Locomotion.latestId = 0;
