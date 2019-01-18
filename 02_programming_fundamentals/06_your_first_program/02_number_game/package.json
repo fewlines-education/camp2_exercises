@@ -1,5 +1,5 @@
 {
-  "name": "02_number_game_with_stats",
+  "name": "02_number_game",
   "version": "1.0.0",
   "description": "",
   "main": "number_game.js",

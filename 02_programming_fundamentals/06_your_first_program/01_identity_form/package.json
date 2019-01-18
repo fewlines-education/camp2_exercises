@@ -1,8 +1,8 @@
 {
-  "name": "01_number_game",
+  "name": "01_identity_form",
   "version": "1.0.0",
   "description": "",
-  "main": "number_game.js",
+  "main": "identity_form.js",
   "scripts": {
     "test": "eslint . && jest"
   },
