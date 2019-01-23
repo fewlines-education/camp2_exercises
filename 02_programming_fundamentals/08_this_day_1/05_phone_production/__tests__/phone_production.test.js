@@ -10,26 +10,6 @@ beforeAll(() => {
   return studentCode;
 });
 
-test("Testing if massung has the right properties", () => {
-  massung.functional = true;
-  massung.autodestruction();
-  expect(massung).toHaveProperty('autodestruction');
-  expect(massung).toHaveProperty('headphone');
-  expect(massung.headphone).toBe(true);
-  expect(massung.system).toMatch("Dnadroid");
-  expect(massung.screenSize).toBe(6.3);
-  expect(massung.functional).toBe(false);
-});
-
-test("Testing if jPhone has the right properties", () => {
-  jPhone.turnedOn = true;
-  jPhone.batteryObsolescence();
-  expect(jPhone).toHaveProperty('batteryObsolescence');
-  expect(jPhone.system).toMatch("JOS");
-  expect(jPhone.screenSize).toBe(6.5);
-  expect(jPhone.turnedOn).toBe(false);
-});
-
 test("Testing if phone has the right insertSim function", () => {
   phone.validSim = false;
 
@@ -41,6 +21,47 @@ test("Testing if phone has the right insertSim function", () => {
 
   expect(phone.validSim).toBe(true);
   expect(phone.myNumber).toMatch('0102030405');
+});
+
+test("The massung has a system called Dnadroid", () => {
+  expect(massung.system).toMatch("Dnadroid");
+});
+
+test("The massung has a heaphone property", () => {
+  expect(massung).toHaveProperty('headphone');
+  expect(massung.headphone).toBe(true);
+});
+
+test("The massung has a 6.3 screenSize", () => {
+  expect(massung.screenSize).toBe(6.3);
+});
+
+test("The massung has a autodestruction function", () => {
+  expect(massung).toHaveProperty('autodestruction');
+});
+
+test("The massung's autodestruction function behaves as expected", () => {
+  massung.functional = true;
+  massung.autodestruction();
+  expect(massung.functional).toBe(false);
+});
+
+test("The jPhone has a system called JOS", () => {
+  expect(jPhone.system).toMatch("JOS");
+});
+
+test("The jPhone has a 6.5 screenSize", () => {
+  expect(jPhone.screenSize).toBe(6.5);
+});
+
+test("The jPhone has a batteryObsolescence function", () => {
+  expect(jPhone).toHaveProperty('batteryObsolescence');
+});
+
+test("The jPhone's batteryObsolescence function behaves as expected", () => {
+  jPhone.turnedOn = true;
+  jPhone.batteryObsolescence();
+  expect(jPhone.turnedOn).toBe(false);
 });
 
 test("Testing for personalJPhone and workJPhone", () => {
