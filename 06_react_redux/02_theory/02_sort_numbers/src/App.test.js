@@ -26,9 +26,9 @@ it("a button exists", () => {
 
 it("the first printed list is in ascending order", () => {
   const listMock = shallow(<App/>);
-  const stateList = listMock.state("listItem");
 
-  const beforeClick = stateList.map(element => element.props.children);
+  let beforeClickElements = listMock.find('li').getElements();
+  let beforeClick = beforeClickElements.map(element => element.props.children)
 
   let arrayMock  = [0,1,2,3,4,5,6,7,8,9];
 
@@ -37,40 +37,28 @@ it("the first printed list is in ascending order", () => {
 
 it('List changes after clicking on the button', () => {
   const listMock = shallow(<App/>);
-  const stateList = listMock.state("listItem");
 
-  let beforeClick = [];
-  stateList.forEach(element => {
-    beforeClick.push(element.props.children)
-  })
+  let beforeClickElements = listMock.find('li').getElements();
+  let beforeClick = beforeClickElements.map(element => element.props.children)
 
   listMock.find('button').simulate('click');
 
-  let afterClick = [];
-  stateList.forEach(element => {
-    afterClick.push(element.props.children)
-  })
+  let afterClickElements = listMock.find('li').getElements();
+  let afterClick = afterClickElements.map(element => element.props.children)
 
   expect(beforeClick).not.toMatchObject(afterClick)
 })
 
 it('List is reversed after clicking on the button', () => {
   const listMock = shallow(<App/>);
-  const stateList = listMock.state("listItem");
-
-  let beforeClick = [];
-  stateList.forEach(element => {
-    beforeClick.push(element.props.children)
-  })
+  let arrayMockReversed  = [9,8,7,6,5,4,3,2,1,0];
 
   listMock.find('button').simulate('click');
 
-  let afterClick = [];
-  stateList.forEach(element => {
-    afterClick.push(element.props.children)
-  })
+  let afterClickElements = listMock.find('li').getElements();
+  let afterClick = afterClickElements.map(element => element.props.children)
 
-  expect(beforeClick).toMatchObject(afterClick.reverse())
+  expect(afterClick).toMatchObject(arrayMockReversed)
 })
 
 // ;find()
