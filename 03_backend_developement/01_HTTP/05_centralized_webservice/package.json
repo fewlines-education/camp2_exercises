@@ -1,0 +1,21 @@
+{
+  "name": "Tests_Exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "centralized_webservice.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "noStackTrace": true
+  },
+  "dependencies": {
+    "jest": "^23.6.0",
+    "shelljs": "^0.8.2"
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}
