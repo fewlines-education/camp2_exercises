@@ -31,7 +31,6 @@ test("keyword filled in form gives the right gif's URL from GIPHY", async () => 
   const searchedGif = await Wapiti().goto("http://localhost:3000")
     .fillForm({"#gifSearcher": "lol"}, { waitForPageLoad: false })
     .puppeteer(page => page.waitForSelector("img"))
-    // .
     .capture(() => {
       return document.querySelector("img").src
     })
