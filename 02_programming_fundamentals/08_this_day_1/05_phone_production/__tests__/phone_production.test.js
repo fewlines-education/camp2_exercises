@@ -16,8 +16,8 @@ test("Testing if massung has the right properties", () => {
   expect(massung).toHaveProperty('autodestruction');
   expect(massung).toHaveProperty('headphone');
   expect(massung.headphone).toBe(true);
-  expect(massung.system).toMatch("DNAroid");
-  expect(massung.screen).toBe(6.3);
+  expect(massung.system).toMatch("Dnadroid");
+  expect(massung.screenSize).toBe(6.3);
   expect(massung.functional).toBe(false);
 });
 
@@ -26,15 +26,16 @@ test("Testing if jPhone has the right properties", () => {
   jPhone.batteryObsolescence();
   expect(jPhone).toHaveProperty('batteryObsolescence');
   expect(jPhone.system).toMatch("JOS");
-  expect(jPhone.screen).toBe(6.5);
+  expect(jPhone.screenSize).toBe(6.5);
   expect(jPhone.turnedOn).toBe(false);
 });
 
 test("Testing if phone has the right insertSim function", () => {
   phone.validSim = false;
-  phone.myNumber = "";
 
   expect(phone).toHaveProperty("insertSim");
+  expect(phone.validSim).toBe(false);
+  expect(phone.myNumber).toBe(null);
 
   phone.insertSim("0102030405");
 
@@ -45,7 +46,7 @@ test("Testing if phone has the right insertSim function", () => {
 test("Testing for personalJPhone and workJPhone", () => {
   return studentCode.then( code => {
 
-    expect(personalJPhone.myNumber).toBeDefined();
-    expect(workJPhone.myNumber).toBeDefined();
+    expect(personalJPhone.myNumber).not.toBe(null);
+    expect(workJPhone.myNumber).not.toBe(null);
   });
 });
