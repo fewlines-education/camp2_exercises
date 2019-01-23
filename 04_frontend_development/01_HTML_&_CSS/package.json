@@ -1,15 +1,18 @@
 {
-  "name": "03_button_component",
+  "name": "Tests_Exercises",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "codeTesting.js",
   "scripts": {
-    "test": "npm install && jest"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "wapiti": "^1.3.0"
+    "wapiti": "^3.0.0"
+  },
+  "jest": {
+    "noStackTrace": true
   },
   "dependencies": {
     "jest": "^23.6.0"
