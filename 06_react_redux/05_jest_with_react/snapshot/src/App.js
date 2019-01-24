@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import './snapshot.css';
-
-const fetch = require("node-fetch");
+import './App.css';
 
 const STATUS = {
   HOVERED: 'hovered',
