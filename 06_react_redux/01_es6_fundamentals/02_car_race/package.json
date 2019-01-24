@@ -1,0 +1,20 @@
+{
+  "name": "02_car_race",
+  "version": "1.0.0",
+  "description": "",
+  "main": "car_race.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "eslintIgnore": [
+    "__tests__"
+  ],
+  "jest": {
+    "noStackTrace": true
+  },
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sportCar" : {
+    "maxSpeed": 200,
+    "tankVolume": 40,
+    "consumptionRate": 5,
+    "fuelType": "gasoline"
+  },
+  "electricCar" : {
+    "maxSpeed": 130,
+    "tankVolume": 250,
+    "consumptionRate": 2.5,
+    "fuelType": "electricity"
+  },
+  "cityCar" : {
+    "maxSpeed": 150,
+    "tankVolume": 80,
+    "consumptionRate": 0.5,
+    "fuelType": "gasoline"
+  },
+  "sportMoto" : {
+    "maxSpeed": 180,
+    "tankVolume": 20,
+    "consumptionRate": 3,
+    "fuelType": "gasoline",
+    "wheelsNumber": 2
+  },
+  "scooter" : {
+    "maxSpeed": 70,
+    "tankVolume": 30,
+    "consumptionRate": 1.5,
+    "fuelType": "gasoline",
+    "wheelsNumber": 2
+  }
+}
