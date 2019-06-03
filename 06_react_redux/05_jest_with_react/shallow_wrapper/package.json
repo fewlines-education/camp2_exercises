@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest": "^24.1.0",
     "react": "^16.6.3"
   },
   "scripts": {
