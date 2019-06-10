@@ -15,7 +15,7 @@
     "noStackTrace": true
   },
   "dependencies": {
-    "jest": "^24.1.0",
+    "jest": "^24.8.0",
     "shelljs": "^0.8.2"
   }
 }
