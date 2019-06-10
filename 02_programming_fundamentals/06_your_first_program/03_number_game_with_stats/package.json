@@ -1,0 +1,20 @@
+{
+  "name": "03_number_game_with_stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "number_game.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "noStackTrace": true
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}

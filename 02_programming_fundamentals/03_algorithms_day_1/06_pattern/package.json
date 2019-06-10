@@ -1,0 +1,16 @@
+{
+  "name": "06_pattern",
+  "version": "1.0.0",
+  "description": "display number in descending order",
+  "main": "complete_the_pattern.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "05_play_with_for_loop_bonus",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "noStackTrace": true
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}

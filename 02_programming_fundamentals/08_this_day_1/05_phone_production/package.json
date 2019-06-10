@@ -1,0 +1,21 @@
+{
+  "name": "05_phone_production",
+  "version": "1.0.0",
+  "description": "",
+  "main": "05_phone_production.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ],
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "noStackTrace": true
+  },
+  "dependencies": {
+    "jest": "^24.8.0",
+    "shelljs": "^0.8.2"
+  }
+}

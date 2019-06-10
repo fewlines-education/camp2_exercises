@@ -1,0 +1,45 @@
+{
+  "coord": {
+    "lon": 3.07,
+    "lat": 50.63
+  },
+  "weather": [{
+    "id": 300,
+    "main": "Drizzle",
+    "description": "light intensity drizzle",
+    "icon": "09n"
+  }, {
+    "id": 521,
+    "main": "Rain",
+    "description": "shower rain",
+    "icon": "09n"
+  }],
+  "base": "stations",
+  "main": {
+    "temp": 11.31,
+    "pressure": 1016,
+    "humidity": 93,
+    "temp_min": 10,
+    "temp_max": 12
+  },
+  "visibility": 8000,
+  "wind": {
+    "speed": 3.1,
+    "deg": 80
+  },
+  "clouds": {
+    "all": 75
+  },
+  "dt": 1523739300,
+  "sys": {
+    "type": 1,
+    "id": 5625,
+    "message": 0.0024,
+    "country": "FR",
+    "sunrise": 1523681658,
+    "sunset": 1523731340
+  },
+  "id": 20017301,
+  "name": "Lille",
+  "cod": 200
+}

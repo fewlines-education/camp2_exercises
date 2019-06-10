@@ -1,0 +1,19 @@
+{
+  "name": "02_play_with_conditional_statement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "noStackTrace": true
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}

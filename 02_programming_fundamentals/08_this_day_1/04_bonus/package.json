@@ -1,0 +1,16 @@
+{
+  "name": "04_bonus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "eslintIgnore": [
+    "__tests__"
+  ]
+}

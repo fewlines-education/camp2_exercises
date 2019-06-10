@@ -1,0 +1,17 @@
+{
+  "name": "Tests_Exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "codeTesting.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "noStackTrace": true
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}
