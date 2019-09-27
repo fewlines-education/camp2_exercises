@@ -27,6 +27,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-test-renderer": "^"
+    "react-test-renderer": "^16.9.0"
   }
 }
