@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jest": "^24.8.0",
-    "react": "^16.6.3"
+    "jest": "^24.9.0",
+    "react": "^16.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,6 +24,6 @@
   ],
   "devDependencies": {
     "babel-eslint": "^9.0.0",
-    "react-test-renderer": "^16.6.3"
+    "react-test-renderer": "^"
   }
 }
