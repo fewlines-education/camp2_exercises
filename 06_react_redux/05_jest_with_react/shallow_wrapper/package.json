@@ -23,7 +23,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "react-test-renderer": "^"
+    "babel-eslint": "^10.0.3",
+    "react-test-renderer": "^16.9.0"
   }
 }
